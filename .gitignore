@@ -219,4 +219,4 @@ sftp-config.json
 sftp-config-alt.json
 
 #Grunt
-node-modules
+node_modules
