@@ -1,3 +1,55 @@
+// Custom Styles
+body {
+  background: #ebebeb url('@{imgUrl}/main-bg.png');
+}
 .container {
   margin: 0;
+  position: relative;
+}
+.logo-nav-wrap {
+  background: @brown;
+  padding: 0;
+}
+.sitelogo {
+  a {
+    background: url('@{imgUrl}/main-sprite.png') no-repeat 0 0;
+    width: 146px;
+    height: 94px;
+    display: block;
+    margin: 60px auto 40px;
+    .text-hide();
+  }
+}
+.side-nav {
+  ul {
+    li {
+      background: @brown2;
+      border-top: 1px solid #524946;
+      border-bottom: 1px solid #362e2c;
+      padding: 10px;
+      margin-bottom: 10px;
+      a {
+        color: @white;
+        .font-size(16);
+        font-weight: 700;
+        &:hover {
+          background: none;
+          color: @link-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  html, body {
+    height: 100%;
+  }
+  #main {
+    height: 100%;
+    min-height: 100%;
+  }
+  .logo-nav-wrap {
+    height: 100%;
+  }
 }
