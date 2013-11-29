@@ -28,7 +28,7 @@
 			<div class="logo-nav-wrap col-sm-4">
 				<p class="sitelogo"><a href="/">DGDA Partner logo</a></p>
 				<nav class="side-nav">
-					<ul>
+					<ul class="nav nav-stacked">
 						<li><a href="#">Indløs gavekort</a></li>
 						<li><a href="#">Overblik</a></li>
 						<li><a href="#">Bilag</a></li>
@@ -53,11 +53,20 @@
 					<div class="main-content">
 						<h2 class="tab-header">Indløs oplevelsesbevis</h2>
 
-						<div class="input-group">
-							<input type="text" placeholder="Oplevelsesnummer">
-							<input type="text" placeholder="Oplevelseskode">
-							<input type="button">
-						</div>
+            <table>
+              <tr>
+                <td>
+                  <input class="form-control" type="text" placeholder="Oplevelsesnummer">
+                </td>
+                <td>
+                  <input class="form-control" type="text" placeholder="Oplevelseskode">
+                </td>
+                <td>
+                  <button type="button" class="btn btn-default add-more">+</button>
+                </td>
+              </tr>
+            </table>
+
 						<div class="input-group">
 							<input type="text" placeholder="Oplevelsesnummer">
 							<input type="text" placeholder="Oplevelseskode">
