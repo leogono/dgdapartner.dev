@@ -856,3 +856,12 @@
     height: auto;
   }
 }
+
+// Font size rem mixins
+// ---------------------------
+.font-size(@sizeValue) {
+  @pxValue: @sizeValue;
+  @remValue: (@sizeValue / 10);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
