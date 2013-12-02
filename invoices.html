@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Invoices - DGDA Partnersite</title>
+		<script type="text/javascript">
+		  WebFontConfig = {
+		    google: { families: [ 'Open+Sans:300,400,700:latin' ] }
+		  };
+		  (function() {
+		    var wf = document.createElement('script');
+		    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		    wf.type = 'text/javascript';
+		    wf.async = 'true';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(wf, s);
+		  })(); </script>
+		<link rel="stylesheet" href="assets/css/main.min.css">
+    <script src="assets/js/vendor/modernizr-2.7.0.min.js"></script>
+
+	</head>
+	<body class="container">
+		<div id="main" class="row">
+			<div class="logo-nav-wrap col-sm-4">
+				<p class="sitelogo"><a href="#" class="spr logo">DGDA Partner logo</a></p>
+				<nav class="side-nav">
+					<ul class="nav nav-stacked">
+						<li><a href="#">Indløs gavekort <i class="spr edit"></i></a></li>
+						<li><a href="#">Overblik <i class="spr search"></i></a></li>
+						<li><a href="#">Bilag <i class="spr docs"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="main-content col-sm-8">
+				<header class="user-wrap clearfix">
+					<p class="welcome-text">Velkommen <span class="user-name">Skodsborg Kurhotel</span></p>
+					<ul class="user-info">
+						<li><i class="spr user"></i> <a href="#">Min profil</a></li>
+						<li><i class="spr lock"></i> <a href="#">Log ud</a></li>
+					</ul>
+				</header>
+				<section>
+					<div class="content-wrap">
+						<h2 class="tab-header">Bilag</h2>
+
+            <div id="invoices-wrap">
+            	<div class="table-filter clearfix">
+            		<div class="col-sm-8">
+            			<strong>Periode</strong>
+            			<div class="input-daterange" id="datepicker">
+								    <input type="text" class="form-control input-small datepicker" name="start" />
+								    <span class="add-on">til</span>
+								    <input type="text" class="form-control input-small datepicker" name="end" />
+								  </div>
+            		</div>
+            		<div class="col-sm-4">
+            			<input type="text" class="form-control" placeholder="Søg efter bilag">
+            		</div>
+            	</div>
+            	<div class="table-responsive">
+            		<table class="table table-striped">
+	              	<thead>
+	              		<th>Udbetalings nr.</th>
+	              		<th>Udbetalingsdato</th>
+	              		<th>Beløb</th>
+	              		<th>Download</th>
+	              	</thead>
+	              	<tbody>
+	              		<tr>
+	              			<td>#120</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#99</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#56</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#120</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#99</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#56</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#120</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#99</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              		<tr>
+	              			<td>#56</td>
+	              			<td>01-02-2013</td>
+	              			<td>55.000 kr.</td>
+	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
+	              		</tr>
+	              	</tbody>
+	              </table>
+            	</div>
+
+            	<div class="table-pagination">
+            		<div class="row">
+            			<div class="col-sm-6">
+            				<strong>Vis</strong> <div class="relative"><button class="btn btn-default dropdown-toggle" data-toggle="dropdown">20 <i class="caret"></i></button>
+		            		<ul class="dropdown-menu" role="menu">
+									    <li><a href="#">10</a></li>
+									    <li><a href="#">20</a></li>
+									    <li><a href="#">50</a></li>
+									    <li><a href="#">100</a></li>
+									  </ul></div>
+									  <strong> rækker</strong>
+            			</div>
+            			<div class="page-counter col-sm-6">
+            				<strong>Side <span class="current-page-number">1</span> af <span class="total-page-number">4</span></strong>
+            				<span class="input-group">
+            					<a href="#" class="page-prev form-control btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            					<a href="#" class="page-next form-control btn btn-default"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            				</span>
+            			</div>
+            		</div>
+            		
+            	</div>
+              
+
+            </div>
+					</div>
+				</section>
+			</div>
+		</div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="assets/js/scripts.min.js"></script>
+	</body>
+</html>

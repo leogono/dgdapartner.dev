@@ -3,4 +3,7 @@ jQuery(document).ready(function($) {
     $('.login-form-wrap .input-group').removeClass('focused');
     $(this).parent('.input-group').addClass('focused');
   });
+  $('.input-daterange').datepicker({
+    todayHighlight: true
+  });
 });
