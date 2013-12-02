@@ -36,8 +36,8 @@
 			</div>
 
 			<div class="main-content col-sm-8">
-				<header>
-					<p>Velkommen <span class="user-name">Skodsborg Kurhotel</span></p>
+				<header class="user-wrap">
+					<p class="welcome-text">Velkommen <span class="user-name">Skodsborg Kurhotel</span></p>
 					<ul class="user-info">
 						<li><a href="#">Min profil</a></li>
 						<li><a href="#">Log ud</a></li>
@@ -52,34 +52,36 @@
 					<div class="main-content">
 						<h2 class="tab-header">Indløs oplevelsesbevis</h2>
 
-            <table>
-              <tr>
-                <td>
-                  <input class="form-control" type="text" placeholder="Oplevelsesnummer">
-                </td>
-                <td>
-                  <input class="form-control" type="text" placeholder="Oplevelseskode">
-                </td>
-                <td>
-                  <button type="button" class="btn btn-default add-more">+</button>
-                </td>
-              </tr>
-            </table>
+            <div id="voucher-wrap">
+              <ul class="voucher-list">
+                <li class="vouchers-number">
+                  <input type="text" class="form-control" placeholder="Oplevelsesnummer">
+                </li>
+                <li class="vouchers-code">
+                  <input type="text" class="form-control" placeholder="Oplevelseskode">
+                </li>
+                <li><a href="#" class="voucher-button add-voucher btn btn-default">+</a></li>
+              </ul>
+              <ul class="voucher-list">
+                <li class="vouchers-number">
+                  <input type="text" class="form-control" placeholder="Oplevelsesnummer">
+                </li>
+                <li class="vouchers-code">
+                  <input type="text" class="form-control" placeholder="Oplevelseskode">
+                </li>
+                <li><a href="#" class="voucher-button add-voucher btn btn-default">+</a></li>
+              </ul>
+              <ul class="voucher-list">
+                <li class="vouchers-number">
+                  <input type="text" class="form-control" placeholder="Oplevelsesnummer">
+                </li>
+                <li class="vouchers-code">
+                  <input type="text" class="form-control" placeholder="Oplevelseskode">
+                </li>
+                <li><a href="#" class="voucher-button add-voucher btn btn-default">+</a></li>
+              </ul>
+            </div>
 
-						<div class="input-group">
-							<input type="text" placeholder="Oplevelsesnummer">
-							<input type="text" placeholder="Oplevelseskode">
-							<input type="button">
-						</div>
-						<div class="input-group">
-							<input type="text" placeholder="Oplevelsesnummer">
-							<input type="text" placeholder="Oplevelseskode">
-							<input type="button">
-						</div>
-						<div class="input-group">
-							<button class="btn btn-success btn-lg">Verificer</button>
-							<button class="btn btn-primary btn-lg">Godkend</button>
-						</div>
 					</div>
 				</section>
 			</div>
