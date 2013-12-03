@@ -14,5 +14,6 @@
       'html'    : true,
       'trigger' : 'hover'
     });
+    $('.table-sortable').tablesorter();
   });
 }(jQuery));
