@@ -55,7 +55,7 @@
       padding: 10px 0;
     }
   }
-  .payout-num {
+  .payout-num, .id-num {
     font-weight: 700;
   }
 }
@@ -67,9 +67,45 @@
       padding-right: 20px;
       background: @white url('@{imgUrl}/main-sprite.png') no-repeat right -671px;
       .inline-block();
+      cursor: pointer;
     }
   }
   .search {
     background: @white url('@{imgUrl}/main-sprite.png') no-repeat right -707px;
+  }
+}
+.overview-info {
+  margin-bottom: 20px;
+  .o-col {
+    background: @brown2;
+    color: @white;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid #524946;
+    border-left: 1px solid #362e2c;
+    .user-select();
+    &:first-child {
+      border-radius: 4px 0 0 4px;
+
+    }
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+    &:hover {
+      background: @brown;
+    }
+    span {
+      display: block;
+    }
+    .o-value {
+      .font-size(24);
+      font-weight: 700;
+      padding-top: 20px;
+    }
+    .o-title {
+      .font-size(12);
+      color: #b1aeae;
+      padding-bottom: 20px;
+    }
   }
 }

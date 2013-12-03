@@ -6,4 +6,10 @@ jQuery(document).ready(function($) {
   $('.input-daterange').datepicker({
     todayHighlight: true
   });
+  $('.id-num').click(function(e) {
+    e.preventDefault();
+  });
+  $('.id-num').popover({
+    'html' : true
+  });
 });
