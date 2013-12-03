@@ -1,3 +1,20 @@
+.invoice-overview {
+  border-top: 1px solid #4c4340;
+  border-bottom: 1px solid #362e2c;
+  padding: 25px;
+  color: #b1aeae;
+  .font-size(12);
+  .table {
+    margin-bottom: 0;
+    td {
+      border-top: none;
+      padding: 4px 0px;
+    }
+    .align-right {
+      text-align: right;
+    }
+  }
+}
 .table-pagination {
 	padding: 20px;
 	border-top: 1px solid @border-color;
@@ -14,4 +31,30 @@
 			width: 40px;
 		}
 	}
+}
+.table {
+  thead {
+    background: @white;
+    border-top: 1px solid @border-color;
+    th {
+      padding: 10px 0;
+    }
+  }
+  .payout-num {
+    font-weight: 700;
+  }
+}
+.table-filter {
+  margin: 10px 0;
+  .input-daterange {
+    .form-control {
+      width: 120px;
+      padding-right: 20px;
+      background: @white url('@{imgUrl}/main-sprite.png') no-repeat right -671px;
+      .inline-block();
+    }
+  }
+  .search {
+    background: @white url('@{imgUrl}/main-sprite.png') no-repeat right -707px;
+  }
 }

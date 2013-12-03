@@ -32,6 +32,24 @@
 						<li><a href="#">Bilag <i class="spr docs"></i></a></li>
 					</ul>
 				</nav>
+        <div class="invoice-overview">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Udbetalt til dato</td>
+                <td class="align-right"><strong>120.000 DKK</strong></td>
+              </tr>
+              <tr>
+                <td>Tilgodehavende</td>
+                <td class="align-right"><strong>32.532 DKK</strong></td>
+              </tr>
+              <tr>
+                <td>Næste udbetaling</td>
+                <td class="align-right"><strong>20/11/13</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 			</div>
 
 			<div class="main-content col-sm-8">
@@ -49,15 +67,15 @@
             <div id="invoices-wrap">
             	<div class="table-filter clearfix">
             		<div class="col-sm-8">
-            			<strong>Periode</strong>
             			<div class="input-daterange" id="datepicker">
-								    <input type="text" class="form-control input-small datepicker" name="start" />
-								    <span class="add-on">til</span>
-								    <input type="text" class="form-control input-small datepicker" name="end" />
+                    <span class="add-on"><strong>Periode</strong></span>
+								    <input type="text" class="form-control input-small datepicker" name="dateStart" value="12/03/2013" />
+								    <span class="add-on"><strong>til</strong></span>
+								    <input type="text" class="form-control input-small datepicker" name="dateEnd" value="12/03/2013"/>
 								  </div>
             		</div>
             		<div class="col-sm-4">
-            			<input type="text" class="form-control" placeholder="Søg efter bilag">
+            			<input type="text" class="form-control search" placeholder="Søg efter bilag">
             		</div>
             	</div>
             	<div class="table-responsive">
@@ -70,55 +88,55 @@
 	              	</thead>
 	              	<tbody>
 	              		<tr>
-	              			<td>#120</td>
+	              			<td class="payout-num">#120</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#99</td>
+	              			<td class="payout-num">#99</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#56</td>
+	              			<td class="payout-num">#56</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#120</td>
+	              			<td class="payout-num">#120</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#99</td>
+	              			<td class="payout-num">#99</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#56</td>
+	              			<td class="payout-num">#56</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#120</td>
+	              			<td class="payout-num">#120</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#99</td>
+	              			<td class="payout-num">#99</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
 	              		</tr>
 	              		<tr>
-	              			<td>#56</td>
+	              			<td class="payout-num">#56</td>
 	              			<td>01-02-2013</td>
 	              			<td>55.000 kr.</td>
 	              			<td><a href="#" class="btn btn-primary">PDF <i class="caret"></i></a></td>
@@ -147,9 +165,9 @@
             				</span>
             			</div>
             		</div>
-            		
+
             	</div>
-              
+
 
             </div>
 					</div>
