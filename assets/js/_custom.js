@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
     e.preventDefault();
   });
   $('.id-num').popover({
-    'html' : true
+    'html'    : true,
+    'trigger' : 'hover'
   });
 });
