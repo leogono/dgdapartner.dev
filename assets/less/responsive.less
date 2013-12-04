@@ -1,21 +1,66 @@
+.toggle-nav {
+  .font-size(24);
+  position: absolute;
+  top: 50px;
+  right: 15px;
+}
 @media (max-width: @screen-xs-max) {
-
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .spr.logo {
+    margin: 20px 0 20px 15px;
+  }
+  .side-nav {
+    display: none;
+  }
+  .table {
+    .font-size(12);
+  }
+  .table-pagination {
+    .page-show-number, .page-counter {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
 }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-	.container {
-		margin-left: auto;
-		margin-right: auto;
-	}
   .table-responsive {
+    overflow-x: scroll;
   	.table {
   		.font-size(12);
   	}
+  }
+  .logo-nav-wrap {
+    position: absolute;
+    height: 100%;
+    .side-nav {
+      display: block !important;
+    }
+  }
+  .main-content {
+    margin-bottom: 100px;
+    margin-left: 33.33%;
+  }
+  .overview-info .o-col .o-value {
+    .font-size(20);
+  }
+  #voucher-wrap ul .vouchers-number input, #voucher-wrap ul .vouchers-code input {
+    .font-size(13);
+  }
+  #voucher-wrap ul .voucher-button a {
+    height: 45px;
+    .font-size(28);
   }
 }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
 	.logo-nav-wrap {
     position: absolute;
     height: 100%;
+    .side-nav {
+      display: block !important;
+    }
   }
   .main-content {
     margin-bottom: 100px;
@@ -27,6 +72,9 @@
 	.logo-nav-wrap {
     position: absolute;
     height: 100%;
+    .side-nav {
+      display: block !important;
+    }
   }
   .main-content {
     margin-bottom: 100px;

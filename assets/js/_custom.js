@@ -15,5 +15,9 @@
       'trigger' : 'hover'
     });
     $('.table-sortable').tablesorter();
+    $('.toggle-nav').click(function(e){
+      e.preventDefault();
+      $('.side-nav').slideToggle();
+    });
   });
 }(jQuery));
