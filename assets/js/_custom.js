@@ -19,5 +19,6 @@
       e.preventDefault();
       $('.side-nav').slideToggle();
     });
+    $('input, textarea').placeholder();
   });
 }(jQuery));

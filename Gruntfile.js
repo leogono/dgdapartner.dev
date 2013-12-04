@@ -11,7 +11,8 @@ module.exports = function(grunt) {
         'assets/js/*.js',
         'assets/js/plugins/*.js',
         '!assets/js/scripts.min.js',
-        '!assets/js/plugins/bootstrap-datepicker.js'
+        '!assets/js/plugins/bootstrap-datepicker.js',
+        '!assets/js/plugins/placeholder.js'
       ]
     },
     recess: {
