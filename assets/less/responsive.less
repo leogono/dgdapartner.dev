@@ -9,6 +9,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .toggle-nav {
+    top: 25px;
+  }
   .spr.logo {
     margin: 20px 0 20px 15px;
   }
@@ -94,4 +97,23 @@
     margin-left: 33.33%;
   }
 
+}
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  /* Retina-specific stuff here */
+  .spr {
+    background: url('@{imgUrl}/main-sprite.png') no-repeat;
+    &.logo {
+      background-position: 0 0;
+      background-size: 85px 480px;
+      width: 73px;
+      height: 47px;
+    }
+    &.login-logo {
+      background-position: 0 -272px;
+      background-size: 85px 480px;
+      width: 81px;
+      height: 53px;
+    }
+  }
 }
