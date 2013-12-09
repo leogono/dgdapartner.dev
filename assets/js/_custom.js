@@ -21,4 +21,8 @@
     });
     $('input, textarea').placeholder();
   });
+  $('body') .css({'min-height': (($(window).height()))+'px'});
+    $(window).resize(function(){
+        $('body') .css({'min-height': (($(window).height()))+'px'});
+    });
 }(jQuery));
